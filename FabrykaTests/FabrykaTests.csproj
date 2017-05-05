@@ -52,6 +52,7 @@
   </Choose>
   <ItemGroup>
     <Compile Include="Bloczki\DodawanieTests.cs" />
+    <Compile Include="Bloczki\DzielenieTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
