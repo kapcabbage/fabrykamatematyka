@@ -4,15 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Fabryka
+namespace Fabryka.Interface
 {
-    class Program
+    public interface IBloczek
     {
-        static void Main(string[] args)
-        {
-
-
-            
-        }
+        double wykonaj();
     }
 }
