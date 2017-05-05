@@ -13,7 +13,7 @@ namespace Fabryka
 
 
 
-            //nic
+            
         }
     }
 }
