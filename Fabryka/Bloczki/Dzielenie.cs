@@ -13,7 +13,7 @@ namespace Fabryka.Bloczki
 
         public void wykonaj(Dzialanie dzialanie)
         {
-            if (dzialanie.wynik != null)
+            if (dzialanie.wynik == null)
             {
 
                 if (dzialanie.oper == Operator)
