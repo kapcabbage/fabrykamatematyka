@@ -8,6 +8,6 @@ namespace Fabryka.Interface
 {
     public interface IBloczek
     {
-        double wykonaj();
+        void wykonaj(Dzialanie dzialanie);
     }
 }
