@@ -50,6 +50,7 @@
     <Compile Include="Dzialanie.cs" />
     <Compile Include="Ekstraktor.cs" />
     <Compile Include="Interface\IBloczek.cs" />
+    <Compile Include="LiniaProdukcyjna.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
