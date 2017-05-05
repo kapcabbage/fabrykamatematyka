@@ -1,2 +1,8 @@
 C:\Users\student\Desktop\johnny\Fabryka\Fabryka\bin\Debug\Fabryka.exe.config
 C:\Users\student\Source\Repos\fabrykamatematyka\Fabryka\bin\Debug\Fabryka.exe.config
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\bin\Debug\Fabryka.exe.config
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\bin\Debug\Fabryka.exe
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\bin\Debug\Fabryka.pdb
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\obj\Debug\Fabryka.csprojResolveAssemblyReference.cache
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\obj\Debug\Fabryka.exe
+C:\Users\inf117319\Source\Repos\fabrykamatematyka\Fabryka\obj\Debug\Fabryka.pdb
