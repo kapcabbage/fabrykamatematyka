@@ -10,6 +10,10 @@ namespace Fabryka
     {
         static void Main(string[] args)
         {
+
+
+
+            //nic
         }
     }
 }
