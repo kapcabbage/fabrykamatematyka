@@ -3,10 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fabryka.Interface;
 
 namespace Fabryka.Bloczki
 {
-    public class Mnozenie
+    public class Mnozenie : IBloczek
     {
         private char Operator = '*';
         public void wykonaj(Dzialanie dzialanie)

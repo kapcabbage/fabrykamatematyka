@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fabryka.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace Fabryka.Bloczki
 {
-    public class Dzielenie
+    public class Dzielenie : IBloczek
     {
         private char Operator = '/';
 
