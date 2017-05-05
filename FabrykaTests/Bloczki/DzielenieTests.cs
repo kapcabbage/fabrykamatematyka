@@ -18,7 +18,7 @@ namespace Fabryka.Bloczki.Tests
         public void init()
         {
             _dzialanie = new Dzialanie();
-            _dzialanie.oper = '"';
+            _dzialanie.oper = '/';
             _dzielenie = new Dzielenie();
         }
 
@@ -28,16 +28,18 @@ namespace Fabryka.Bloczki.Tests
             _dzialanie.zm1 = 1;
             _dzialanie.zm2 = -2;
             _dzielenie.wykonaj(_dzialanie);
-            Assert.AreEqual(_dzialanie.wynik, -0.5);
+            Assert.IsNotNull(_dzialanie.wynik);
+            Assert.AreEqual(_dzialanie.wynik.Value, -0.5, 0.0001);
 
         }
         [TestMethod()]
         public void wykonajZwykłyTest()
         {
             _dzialanie.zm1 = 1;
-            _dzialanie.zm2 = 3;
+            _dzialanie.zm2 = 4;
             _dzielenie.wykonaj(_dzialanie);
-            Assert.AreEqual(_dzialanie.wynik, 1/3);
+            Assert.IsNotNull(_dzialanie.wynik);
+            Assert.AreEqual(_dzialanie.wynik.Value, 1/4, 0.000001);
         }
     }
 }
