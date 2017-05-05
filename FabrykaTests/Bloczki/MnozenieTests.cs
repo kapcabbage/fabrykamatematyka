@@ -9,17 +9,17 @@ using System.Threading.Tasks;
 namespace Fabryka.Bloczki.Tests
 {
     [TestClass()]
-    public class DzielenieTests
+    public class MnozenieTests
     {
-        private Dzielenie _dzielenie;
+        private Mnozenie _mnozenie;
         private Dzialanie _dzialanie;
 
         [TestInitialize]
         public void init()
         {
             _dzialanie = new Dzialanie();
-            _dzialanie.oper = '/';
-            _dzielenie = new Dzielenie();
+            _dzialanie.oper = '*';
+            _mnozenie = new Mnozenie();
         }
 
         [TestMethod()]
@@ -27,9 +27,9 @@ namespace Fabryka.Bloczki.Tests
         {
             _dzialanie.zm1 = 1;
             _dzialanie.zm2 = -2;
-            _dzielenie.wykonaj(_dzialanie);
+            _mnozenie.wykonaj(_dzialanie);
             Assert.IsNotNull(_dzialanie.wynik);
-            Assert.AreEqual(_dzialanie.wynik.Value, -0.5, 0.0001);
+            Assert.AreEqual(_dzialanie.wynik.Value, -2, 0.0001);
 
         }
 
@@ -37,8 +37,8 @@ namespace Fabryka.Bloczki.Tests
         public void wykonajZwykłyTest()
         {
             _dzialanie.zm1 = 1;
-            _dzialanie.zm2 = 4;
-            _dzielenie.wykonaj(_dzialanie);
+            _dzialanie.zm2 = 0.25;
+            _mnozenie.wykonaj(_dzialanie);
             Assert.IsNotNull(_dzialanie.wynik);
             Assert.AreEqual(_dzialanie.wynik.Value, 0.25, 0.000001);
         }
