@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Fabryka.Interface;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -6,15 +7,19 @@ using System.Threading.Tasks;
 
 namespace Fabryka.Bloczki
 {
-    public class Dzielenie
+    public class Dzielenie : IBloczek
     {
         private char Operator = '/';
 
         public void wykonaj(Dzialanie dzialanie)
         {
-            if (dzialanie.oper == Operator)
+            if (dzialanie.wynik != null)
             {
-                dzialanie.wynik = (dzialanie.zm1 / dzialanie.zm2);
+
+                if (dzialanie.oper == Operator)
+                {
+                    dzialanie.wynik = (dzialanie.zm1 / dzialanie.zm2);
+                }
             }
         }
     }

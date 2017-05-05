@@ -3,18 +3,22 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Fabryka.Interface;
 
 namespace Fabryka.Bloczki
 {
-    public class Odejmowanie
+    public class Odejmowanie : IBloczek
     {
         private char Operator = '-';
 
         public void wykonaj(Dzialanie dzialanie)
         {
-            if (dzialanie.oper == Operator)
+            if (dzialanie.wynik != null)
             {
-                dzialanie.wynik = dzialanie.zm1 - dzialanie.zm2;
+                if (dzialanie.oper == Operator)
+                {
+                    dzialanie.wynik = dzialanie.zm1 - dzialanie.zm2;
+                }
             }
         }
     }
