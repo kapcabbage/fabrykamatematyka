@@ -19,6 +19,7 @@ namespace Fabryka
             bloczki.Add(new Dzielenie());
             bloczki.Add(new Mnozenie());
             bloczki.Add(new Odejmowanie());
+            bloczki.Add(new Customowy());
 
 
 
@@ -26,6 +27,7 @@ namespace Fabryka
             Console.Out.WriteLine(przetworz("12*3"));
             Console.Out.WriteLine(przetworz("12-3"));
             Console.Out.WriteLine(przetworz("12/3"));
+            Console.Out.WriteLine(przetworz("12(3"));
 
             Console.In.ReadLine();
 

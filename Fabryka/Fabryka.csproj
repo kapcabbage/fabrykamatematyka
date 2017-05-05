@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloczki\Customowy.cs" />
     <Compile Include="Bloczki\Dodawanie.cs" />
     <Compile Include="Bloczki\Dzielenie.cs" />
     <Compile Include="Bloczki\Mnozenie.cs" />
