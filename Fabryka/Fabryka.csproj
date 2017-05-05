@@ -43,8 +43,13 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bloczki\Dodawanie.cs" />
+    <Compile Include="Bloczki\Dzielenie.cs" />
+    <Compile Include="Bloczki\Mnozenie.cs" />
+    <Compile Include="Bloczki\Odejmowanie.cs" />
     <Compile Include="Dzialanie.cs" />
     <Compile Include="Ekstraktor.cs" />
+    <Compile Include="Interface\IBloczek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
