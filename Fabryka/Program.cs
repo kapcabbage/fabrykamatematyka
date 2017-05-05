@@ -10,7 +10,7 @@ namespace Fabryka
     {
         static void Main(string[] args)
         {
-
+            LiniaProdukcyjna lp = new LiniaProdukcyjna();
 
 
             

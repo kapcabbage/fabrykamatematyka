@@ -12,7 +12,7 @@ namespace Fabryka.Bloczki
         private char Operator = '*';
         public void wykonaj(Dzialanie dzialanie)
         {
-            if (dzialanie.wynik != null)
+            if (dzialanie.wynik == null)
             {
                 if (dzialanie.oper == Operator)
                 {

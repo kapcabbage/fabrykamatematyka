@@ -13,10 +13,10 @@ namespace Fabryka
         public static Dzialanie extract(string input)
         {
             Dzialanie d = new Dzialanie();
-            Regex rgx = new Regex(@"^\d+\D.\d+$");
+            Regex rgx = new Regex(@"^\d+[^\d]+\d+$");
             Regex liczba1 = new Regex(@"^\d+");
             Regex liczba2 = new Regex(@"\d+$");
-            Regex oper = new Regex(@"\D.");
+            Regex oper = new Regex(@"[^\d]+");
 
             if (rgx.IsMatch(input) == false)
                 return null;
