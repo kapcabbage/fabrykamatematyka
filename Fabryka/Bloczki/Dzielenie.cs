@@ -13,9 +13,13 @@ namespace Fabryka.Bloczki
 
         public void wykonaj(Dzialanie dzialanie)
         {
-            if (dzialanie.oper == Operator)
+            if (dzialanie.wynik != null)
             {
-                dzialanie.wynik = (dzialanie.zm1 / dzialanie.zm2);
+
+                if (dzialanie.oper == Operator)
+                {
+                    dzialanie.wynik = (dzialanie.zm1 / dzialanie.zm2);
+                }
             }
         }
     }
