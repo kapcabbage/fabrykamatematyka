@@ -12,6 +12,6 @@ namespace Fabryka
         public double zm2;
         public char oper;
 
-        public double wynik;
+        public double? wynik;
     }
 }
